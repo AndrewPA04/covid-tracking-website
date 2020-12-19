@@ -1,5 +1,5 @@
 async function getJSON(){
-    const statsTable = await fetch("http://cov-counter.herokuapp.com/api/recordstats");
+    const statsTable = await fetch("https://cov-counter.herokuapp.com/api/recordstats");
     const stats = await statsTable.json();
     var deathsLabel = document.getElementById('deaths');
     deathsLabel.innerHTML = stats.deathsJSON;
