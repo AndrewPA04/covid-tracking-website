@@ -5,12 +5,12 @@ import bs4
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('https://covid-tracker-website.herokuapp.com/')
 def indexPage():
 
     return render_template("index.html") 
 
-@app.route('/api/recordstats',methods=['GET'])
+@app.route('https://covid-tracker-website.herokuapp.com/api/recordstats',methods=['GET'])
 def sendJSON():
     response = requests.get("https://www.worldometers.info/coronavirus/")
     content = response.content
