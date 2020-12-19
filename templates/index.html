@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Covid Stats</title>
+        <link rel="stylesheet" href='static/signupStyle.css'>
+        <script src="static/covidStats.js"></script>
+    </head>
+    <body onload="getJSON()">
+        <div id="wrapper" onload="getJSON()">
+            <div class="container">
+                <div class="covid-stats" id="covid-cases">
+                    <label>Global cases:</label>
+                    <label class ="stat-display">ADD FROM JSON</label>
+                </div>
+                <div class="covid-stats" id="covid-recoveries">
+                    <label>Global recoveries:</label>
+                    <label class="stat-display">ADD FROM JSON</label>
+                </div>
+                <div class="covid-stats" id="covid-deaths">
+                    <label>Global deaths:</label>
+                    <label class="stat-display">ADD FROM JSON</label>
+                </div>
+                <div class ="covid-stats" id="total-cases">
+                    <label>Total cases:</label>
+                    <label class="stat-display">ADD FROM JSON</label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
