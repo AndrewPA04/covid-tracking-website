@@ -1,9 +1,17 @@
-body{
-    background:linear-gradient(45deg,grey,white)
+header, footer {
+    background-color: yellow;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
 }
 
-form{
-    position: relative;
-    top:45%;
-    right:47.5%;
+.title {
+    background-color: yellow;
+    text-align: center;
+    height: auto;
+    
+}
+
+#wrapper {
+    text-decoration:transparent ;
 }
