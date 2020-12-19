@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Covid Stats</title>
-        <link rel="stylesheet" href='static/signupStyle.css'>
-        <script src="static/covidStats.js"></script>
+        <title>Sign in</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href='/static/signupStyle.css'>
+        <script src='/static/covidStats.js'></script>
     </head>
-    <body onload="getJSON()">
-        <div id="wrapper" onload="getJSON()">
-            <div class="container">
-                <div class="covid-stats" id="covid-cases">
-                    <label>Global cases:</label>
-                    <label class ="stat-display">ADD FROM JSON</label>
-                </div>
-                <div class="covid-stats" id="covid-recoveries">
-                    <label>Global recoveries:</label>
-                    <label class="stat-display">ADD FROM JSON</label>
-                </div>
-                <div class="covid-stats" id="covid-deaths">
-                    <label>Global deaths:</label>
-                    <label class="stat-display">ADD FROM JSON</label>
-                </div>
-                <div class ="covid-stats" id="total-cases">
-                    <label>Total cases:</label>
-                    <label class="stat-display">ADD FROM JSON</label>
-                </div>
+    <body onload="getJSON();">
+
+        <div class="title">
+            <header><h1>Covid Tracker</h1></header>
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+            Covid-19 alert: The Covid-19 is not a subject that should be taken with ease, make sure to take all precautions and stay safe.
+        </div>
+
+        <div id = "wrapper" onload="getJSON();">
+            <div class="card" style="width: 100%; border-color: white;">
+                <img class="card-img-top" src="/static/cases.png" alt="Globe Picture" style="width: 10%; margin-left: auto; margin-right: auto; vertical-align: middle">
+                <div class="card-body">
+                  <h4 class="card-title" style="text-align: center;">Global active cases:</h4> 
+                  <p class="card-text" style="text-align: center; font-size: larger;" id='active-cases'>CALCULATING...</p>
             </div>
+
+            <br>
+            <br>
+            
+            <div class="card" style="width: 100%; border-color: white;">
+                <img class="card-img-top" src="/static/recoveries.png" alt="Globe Picture" style="width: 10%; margin-left: auto; margin-right: auto; vertical-align: middle">
+                <div class="card-body">
+                    <h4 class="card-title" style="text-align: center;">Global recoveries:</h4>
+                    <p class="card-text" style="text-align: center; font-size: larger;" id='recoveries'>CALCULATING...</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="card" style="width: 100%; border-color: white;">
+                <img class="card-img-top" src="/static/deaths.png" alt="Globe Picture" style="width: 10%; margin-left: auto; margin-right: auto; vertical-align: middle">
+                <div class="card-body">
+                    <h4 class="card-title" style="text-align: center;">Global deaths:</h4>
+                    <p class="card-text" style="text-align: center; font-size: larger;" id="deaths">CALCULATING...</p>
+            </div>
+
+            <br>
+            <br>
+
         </div>
     </body>
+
+    
 </html>
