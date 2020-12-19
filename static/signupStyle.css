@@ -1,0 +1,9 @@
+body{
+    background:linear-gradient(45deg,grey,white)
+}
+
+form{
+    position: relative;
+    top:45%;
+    right:47.5%;
+}
