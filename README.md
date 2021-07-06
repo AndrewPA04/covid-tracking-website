@@ -1,5 +1,5 @@
 # covid-tracking-website
 tracks covid cases,deaths,recoveries made by:
 
-digital#1337
+l0ckie#8058
 Poggy#0001
